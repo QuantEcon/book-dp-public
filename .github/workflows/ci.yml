@@ -1,4 +1,4 @@
-name: Build Project [using jupyter-book]
+name: Deploy preview to Netlify
 on: [push]
 jobs:
   preview:
