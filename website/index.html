@@ -1,52 +1,44 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dynamic Programming</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Dynamic Programming: Volume I (Finite States) and Volume II (General States). By Thomas J. Sargent and John Stachurski." />
-    <meta property="og:title" content="Dynamic Programming" />
-    <meta property="og:description" content="Dynamic Programming: Volume I (Finite States) and Volume II (General States). By Thomas J. Sargent and John Stachurski." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dp.quantecon.org/" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="Dynamic Programming: Volume I (Finite States) and Volume II (General States). By Thomas J. Sargent and John Stachurski.">
+    <meta property="og:title" content="Dynamic Programming">
+    <meta property="og:description" content="Dynamic Programming: Volume I (Finite States) and Volume II (General States). By Thomas J. Sargent and John Stachurski.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dp.quantecon.org/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
-<body class="is-preload">
-
-    <!-- Header -->
-    <header id="header">
-        <div class="inner">
-            <h1><b>Dynamic Programming</b></h1>
-            <br>
-            <a href="https://www.tomsargent.com/">Thomas J. Sargent</a> and <a href="https://johnstachurski.net/">John Stachurski</a>
-        </div>
-        <div class="amazon-link-container">
-            <a href="https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/" class="amazon-button">Buy on Amazon<span class="amazon-vol">(Volume I)</span></a>
-            <div class="download-links">
-                <a href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp.pdf" class="download-button">Download Vol I (PDF)</a>
-                <span class="download-sep">&middot;</span>
-                <a href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp2.pdf" class="download-button">Download Vol II (PDF)</a>
-            </div>
+<body>
+<div class="paper">
+    <header class="mast">
+        <div class="mast__inner">
+            <a class="mast__brand" href="/">dp.quantecon.org</a>
+            <nav class="mast__nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#read">Read &amp; download</a>
+                <a href="#contents">Contents</a>
+                <a href="https://github.com/QuantEcon/book-dp-public/">GitHub</a>
+            </nav>
+            <a class="mast__logo" href="https://quantecon.org" aria-label="QuantEcon">
+                <img src="images/qe-menubar-logo.svg" alt="QuantEcon">
+            </a>
         </div>
     </header>
 
-    <!-- Main -->
-    <div id="main">
-        <a href="https://quantecon.org" class="qe-logo"><img src="images/qe-menubar-logo.svg" alt="QuantEcon"></a>
-
-        <!-- Introduction -->
-        <section id="intro">
-            <header class="major">
-                <h2>About</h2>
-            </header>
-            <p>
+    <main class="page">
+        <section class="hero" id="about">
+            <h1>Dynamic Programming</h1>
+            <p class="authors">
+                <a href="https://www.tomsargent.com/">Thomas J. Sargent</a> &middot;
+                <a href="https://johnstachurski.net/">John Stachurski</a>
+            </p>
+            <p class="blurb">
                 These books cover dynamic programming and its applications in
                 economics, finance, and adjacent fields like operations research.
                 They bring together recent innovations in the theory of dynamic
@@ -54,18 +46,131 @@
             </p>
         </section>
 
-        <!-- Table of Contents -->
-        <section id="toc" class="main">
-            <header class="major">
-                <h2>Table of Contents</h2>
-            </header>
-            <div class="toc-tabs">
-                <div class="tab-buttons" role="tablist">
-                    <button class="tab-btn active" data-tab="vol1" role="tab" aria-selected="true" aria-controls="vol1" id="tab-vol1">Volume I: Finite States</button>
-                    <button class="tab-btn" data-tab="vol2" role="tab" aria-selected="false" aria-controls="vol2" id="tab-vol2">Volume II: General States</button>
-                </div>
-                <div class="tab-content active" id="vol1" role="tabpanel" aria-labelledby="tab-vol1">
-                    <ol>
+        <hr class="rule">
+
+        <section class="section" id="read">
+            <h2>Read &amp; download</h2>
+            <p class="section__sub">Online editions are searchable and include runnable code. PDFs remain available for offline use.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card__head">
+                        <div class="cover cover--img">
+                            <img src="images/covers/dp-vol1.jpg" alt="Dynamic Programming, Volume I — Finite States (book cover)">
+                        </div>
+                        <div class="card__title">
+                            <div class="eyebrow" aria-hidden="true">Volume I</div>
+                            <h3>Finite States</h3>
+                            <div class="meta">10 chapters</div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn--myst" href="https://quantecon.github.io/book-dp1/" aria-label="Read Volume I online — MyST edition">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Read online (MyST)
+                    </a>
+
+                    <div class="card__actions card__actions--3">
+                        <a class="btn btn--ghost" href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp.pdf" aria-label="Download Volume I PDF">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M3 2h5l3 3v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.2"/>
+                                <path d="M8 2v3h3" stroke="currentColor" stroke-width="1.2"/>
+                            </svg>
+                            PDF
+                        </a>
+                        <a class="btn btn--ghost" href="code.html">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="m5 4-3 3 3 3M9 4l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Code
+                        </a>
+                        <a class="btn btn--ghost" href="slides.html">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <rect x="2" y="3" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                                <path d="M5.5 12h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                            </svg>
+                            Slides
+                        </a>
+                    </div>
+
+                    <p class="card__print">
+                        Also available in print &mdash;
+                        <a href="https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F" target="_blank" rel="noopener">Cambridge</a>
+                        &middot;
+                        <a href="https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/" target="_blank" rel="noopener">Amazon</a>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card__head">
+                        <div class="cover" role="img" aria-label="Volume II cover placeholder — forthcoming">
+                            <div class="cover__head">
+                                <span class="cover__label">Volume II</span>
+                                <span class="cover__title">Dynamic<br>Programming</span>
+                                <span class="cover__subtitle">General States</span>
+                            </div>
+                            <span class="cover__status">Forthcoming</span>
+                        </div>
+                        <div class="card__title">
+                            <div class="eyebrow" aria-hidden="true">Volume II</div>
+                            <h3>General States</h3>
+                            <div class="meta">9 chapters</div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn--myst" href="https://quantecon.github.io/book-dp2/" aria-label="Read Volume II online — MyST edition">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Read online (MyST)
+                    </a>
+
+                    <div class="card__actions card__actions--1">
+                        <a class="btn btn--ghost btn--full" href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp2.pdf" aria-label="Download Volume II PDF">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M3 2h5l3 3v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.2"/>
+                                <path d="M8 2v3h3" stroke="currentColor" stroke-width="1.2"/>
+                            </svg>
+                            PDF
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="rule">
+
+        <section class="section" id="lectures">
+            <h2>Overview Lectures</h2>
+            <p class="section__sub">High-level introduction covering both volumes.</p>
+            <div class="lectures">
+                <a class="btn btn--ghost" href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/lecture1.pdf">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <rect x="2" y="3" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                        <path d="M5.5 12h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    Lecture 1 (PDF)
+                </a>
+                <a class="btn btn--ghost" href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/lecture2.pdf">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <rect x="2" y="3" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                        <path d="M5.5 12h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    Lecture 2 (PDF)
+                </a>
+            </div>
+        </section>
+
+        <hr class="rule">
+
+        <section class="section" id="contents">
+            <h2>Contents</h2>
+            <div class="toc-grid">
+                <div>
+                    <h3>Volume I &mdash; Finite States</h3>
+                    <ol class="toc">
                         <li>Introduction</li>
                         <li>Operators and Fixed Points</li>
                         <li>Markov Dynamics</li>
@@ -78,109 +183,34 @@
                         <li>Continuous Time</li>
                     </ol>
                 </div>
-                <div class="tab-content" id="vol2" role="tabpanel" aria-labelledby="tab-vol2">
-                    <ol>
+                <div>
+                    <h3>Volume II &mdash; General States</h3>
+                    <ol class="toc">
                         <li>Prelude: Examples of Dynamic Programs</li>
-                        <li value="2">Abstract Decision Processes</li>
-                        <li value="3">ADPs on Pospace</li>
-                        <li value="4">ADPs on Banach Space</li>
-                        <li value="5">ADP Transformations</li>
-                        <li value="6">Linear Decision Processes</li>
-                        <li value="7">Recursive Decision Processes</li>
-                        <li value="8">Additional Applications</li>
-                        <li value="9">Approximation and Learning</li>
+                        <li>Abstract Decision Processes</li>
+                        <li>ADPs on Pospace</li>
+                        <li>ADPs on Banach Space</li>
+                        <li>ADP Transformations</li>
+                        <li>Linear Decision Processes</li>
+                        <li>Recursive Decision Processes</li>
+                        <li>Additional Applications</li>
+                        <li>Approximation and Learning</li>
                     </ol>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Overview Lectures -->
-        <section id="overview-lectures" class="main">
-            <header class="major">
-                <h2>Overview Lectures</h2>
-            </header>
-            <p>High-level overview lectures covering both volumes.</p>
-            <div class="align-center">
-                <ul class="actions fit">
-                    <li>
-                        <a href="https://github.com/QuantEcon/book-dp1-public/raw/main/pdf/lecture1.pdf" class="button fit"><img src="images/slides.png" width="14" alt="Slides icon">Lecture 1 (PDF)</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/QuantEcon/book-dp1-public/raw/main/pdf/lecture2.pdf" class="button fit"><img src="images/slides.png" width="14" alt="Slides icon">Lecture 2 (PDF)</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Downloads -->
-        <section id="download" class="main">
-            <header class="major">
-                <h2>Download</h2>
-            </header>
-            <h4>Volume I: Finite States</h4>
-            <div class="align-center">
-                <ul class="actions fit">
-                    <li>
-                        <a href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp.pdf" class="button fit"><img src="images/book.png" width="15" alt="Book icon">Book (PDF)</a>
-                    </li>
-                    <li>
-                        <a href="code.html" class="button fit"><img src="images/book.png" width="15" alt="Code icon">Code</a>
-                    </li>
-                    <li>
-                        <a href="slides.html" class="button fit"><img src="images/slides.png" width="14" alt="Slides icon">Slides</a>
-                    </li>
-                </ul>
-            </div>
-            <h4>Volume II: General States</h4>
-            <div class="align-center">
-                <ul class="actions fit">
-                    <li>
-                        <a href="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp2.pdf" class="button fit"><img src="images/book.png" width="15" alt="Book icon">Book (PDF)</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Feedback -->
-        <section id="feedback" class="main">
-            <header class="major">
-                <h2>Feedback</h2>
-            </header>
-            <p>We welcome all feedback. Please contact us by email or submit an issue/pull request to the <a href="https://github.com/QuantEcon/book-dp-public/">GitHub repository</a>.</p>
-        </section>
-
-        <!-- Links -->
-        <section id="links" class="main">
-            <header class="major">
-                <h2>Links</h2>
-            </header>
-            <div class="align-center">
-                <ul class="actions fit">
-                    <li>
-                        <a href="https://github.com/QuantEcon/book-dp-public/" class="button fit"><img src="images/github-mark.png" width="15" alt="GitHub icon">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://quantecon.org" class="button fit"><img src="images/qe-logo-small.png" width="25" alt="QuantEcon icon">QuantEcon</a>
-                    </li>
-                    <li>
-                        <a href="mailto:john.stachurski@gmail.com" class="button fit"><img src="images/mail.png" width="15" alt="Email icon">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="design" class="main">
-            <div class="align-center">Design: <a href="https://html5up.net">HTML5 UP</a></div>
-        </section>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <footer class="foot">
+        <div class="foot__inner">
+            <span>&copy; 2024&ndash;2026 Sargent &amp; Stachurski</span>
+            <span class="foot__links">
+                <a href="https://github.com/QuantEcon/book-dp-public/">GitHub</a>
+                <a href="https://quantecon.org">QuantEcon</a>
+                <a href="mailto:john.stachurski@gmail.com">Contact</a>
+            </span>
+        </div>
+    </footer>
+</div>
 </body>
-
 </html>

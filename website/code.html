@@ -1,91 +1,61 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Code</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code &mdash; Dynamic Programming</title>
+    <meta name="description" content="Source code for Volume I of Dynamic Programming by Sargent and Stachurski.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
-<body class="is-preload">
-
-    <!-- Header -->
-    <header id="header">
-        <div class="inner">
-            <h1><b>Code — Volume I</b></h1>
-            <br>
+<body>
+<div class="paper">
+    <header class="mast">
+        <div class="mast__inner">
+            <a class="mast__brand" href="index.html">dp.quantecon.org</a>
+            <nav class="mast__nav" aria-label="Primary">
+                <a href="index.html#about">About</a>
+                <a href="index.html#read">Read &amp; download</a>
+                <a href="index.html#contents">Contents</a>
+                <a href="https://github.com/QuantEcon/book-dp-public/">GitHub</a>
+            </nav>
+            <a class="mast__logo" href="https://quantecon.org" aria-label="QuantEcon">
+                <img src="images/qe-menubar-logo.svg" alt="QuantEcon">
+            </a>
         </div>
     </header>
 
-    <!-- Main -->
-    <div id="main">
+    <main class="page subpage">
+        <a class="subpage-back" href="index.html">&larr; Back to overview</a>
+        <h1>Code</h1>
+        <p class="subpage__sub">Source for Volume I &mdash; Finite States, in Julia and Python.</p>
 
-        <!-- Content -->
-        <section id="content" class="main">
+        <table class="list-table">
+            <tbody>
+                <tr>
+                    <td>Julia</td>
+                    <td><a href="https://github.com/QuantEcon/book-dp-public/tree/main/code/jl">Files on GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td><a href="https://github.com/QuantEcon/book-dp-public/tree/main/code/py">Files on GitHub</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
-            <!-- Text -->
-            <section>
-                <h2 align="right"><a href="/">Back</a></h2>
-
-                <div class="table-wrapper">
-                    <table class="alt" style="width:100%;">
-                        <tbody>
-                            <tr>
-                                <td>Julia</td>
-                                <td><a href="https://github.com/QuantEcon/book-dp-public/tree/main/code/jl">Files on GitHub</a></td>
-                            </tr>
-                            <tr>
-                                <td>Python</td>
-                                <td><a href="https://github.com/QuantEcon/book-dp-public/tree/main/code/py">Files on GitHub</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <br>
-
-            <section id="links" class="main">
-                <header class="major">
-                    <h2>Links</h2>
-                </header>
-                <div class="align-center">
-                    <ul class="actions fit">
-                        <li>
-                            <a href="https://github.com/QuantEcon/book-dp-public/" class="button fit"><img src="images/github-mark.png" width="15" alt="GitHub icon">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://quantecon.org" class="button fit"><img src="images/qe-logo-small.png" width="25" alt="QuantEcon icon">QuantEcon</a>
-                        </li>
-                        <li>
-                            <a href="mailto:john.stachurski@gmail.com" class="button fit"><img src="images/mail.png" width="15" alt="Email icon">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <hr />
-            </section>
-
-            <section id="design" class="main">
-                <div class="align-center">Design: <a href="https://html5up.net">HTML5 UP</a></div>
-            </section>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <footer class="foot">
+        <div class="foot__inner">
+            <span>&copy; 2024&ndash;2026 Sargent &amp; Stachurski</span>
+            <span class="foot__links">
+                <a href="https://github.com/QuantEcon/book-dp-public/">GitHub</a>
+                <a href="https://quantecon.org">QuantEcon</a>
+                <a href="mailto:john.stachurski@gmail.com">Contact</a>
+            </span>
+        </div>
+    </footer>
+</div>
 </body>
-
 </html>
