@@ -1,0 +1,29 @@
+# Dynamic Programming
+
+> A two-volume work on dynamic programming and its applications, by Thomas J. Sargent and John Stachurski. The volumes offer a unified treatment of dynamic programming theory, from finite-state foundations to a complete reworking of the theory for general state spaces, with applications across economics, finance, and operations research.
+
+## Online editions (canonical)
+
+- [Volume I: Finite States](https://quantecon.github.io/book-dp1/): MyST online edition — searchable, linkable, with companion code.
+- [Volume II: General States](https://quantecon.github.io/book-dp2/): MyST online edition (forthcoming print edition).
+
+## PDFs
+
+- [Volume I PDF](https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp.pdf)
+- [Volume II PDF](https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp2.pdf)
+- [Overview Lecture 1 (PDF)](https://github.com/QuantEcon/book-dp-public/raw/main/pdf/lecture1.pdf)
+- [Overview Lecture 2 (PDF)](https://github.com/QuantEcon/book-dp-public/raw/main/pdf/lecture2.pdf)
+
+## Code
+
+- [Volume I code in Julia and Python](https://github.com/QuantEcon/book-dp-public/tree/main/code)
+
+## In print
+
+- Volume I: published by Cambridge University Press, 2024 (ISBN 9781009540759). Available from [Cambridge](https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F) and [Amazon](https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/).
+- Volume II: forthcoming.
+
+## Source
+
+- [GitHub repository](https://github.com/QuantEcon/book-dp-public)
+- [Landing page](https://dp.quantecon.org/)
