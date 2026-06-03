@@ -103,7 +103,7 @@ ol, ul { padding: 0; }
   text-decoration: none;
 }
 .mast__logo img {
-  width: 110px;
+  width: 150px;
   height: auto;
 }
 
@@ -495,7 +495,7 @@ ol, ul { padding: 0; }
     gap: 12px;
   }
   .mast__nav { display: none; }
-  .mast__logo img { width: 90px; }
+  .mast__logo img { width: 110px; }
   .hero .authors { font-size: 17px; }
   .hero .blurb { font-size: 15px; }
   .section h2 { font-size: 24px; }
