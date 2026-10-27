@@ -21,3 +21,16 @@ The easiest way to provide feedback is to open an issue above.
 ## Website
 
 This repository hosts the public book website. 
+
+## Citation
+
+Please cite the Cambridge University Press editions, including when working
+from the free PDFs:
+
+- Sargent, Thomas J. and John Stachurski (2025). *Dynamic Programming: Finite
+  States*. Cambridge University Press. https://doi.org/10.1017/9781009540780
+- Sargent, Thomas J. and John Stachurski (forthcoming, 2027). *Dynamic
+  Programming: General States*. Cambridge University Press.
+
+BibTeX entries are in [`website/cite/dp.bib`](website/cite/dp.bib) and at
+[dp.quantecon.org/#cite](https://dp.quantecon.org/#cite).

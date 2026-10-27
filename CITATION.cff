@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use these books, please cite the Cambridge University Press editions as below."
+title: "Dynamic Programming, Volumes I and II"
+type: software
+authors:
+  - family-names: Sargent
+    given-names: Thomas J.
+  - family-names: Stachurski
+    given-names: John
+url: "https://dp.quantecon.org/"
+repository-code: "https://github.com/QuantEcon/book-dp-public"
+preferred-citation:
+  type: book
+  title: "Dynamic Programming: Finite States"
+  authors:
+    - family-names: Sargent
+      given-names: Thomas J.
+    - family-names: Stachurski
+      given-names: John
+  publisher:
+    name: Cambridge University Press
+    city: Cambridge
+  year: 2025
+  doi: 10.1017/9781009540780
+references:
+  - type: book
+    title: "Dynamic Programming: General States"
+    authors:
+      - family-names: Sargent
+        given-names: Thomas J.
+      - family-names: Stachurski
+        given-names: John
+    publisher:
+      name: Cambridge University Press
+      city: Cambridge
+    year: 2027
+    status: in-press
+    url: "https://dp.quantecon.org/"

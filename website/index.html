@@ -13,8 +13,8 @@
     <meta name="citation_author" content="Sargent, Thomas J.">
     <meta name="citation_author" content="Stachurski, John">
     <meta name="citation_publisher" content="Cambridge University Press">
-    <meta name="citation_isbn" content="9781009540759">
-    <meta name="citation_publication_date" content="2024">
+    <meta name="citation_publication_date" content="2025">
+    <meta name="citation_doi" content="10.1017/9781009540780">
     <meta name="citation_pdf_url" content="https://github.com/QuantEcon/book-dp-public/raw/main/pdf/dp.pdf">
     <script type="application/ld+json">
     {
@@ -30,11 +30,12 @@
             { "@type": "Person", "name": "John Stachurski", "url": "https://johnstachurski.net/" }
           ],
           "publisher": { "@type": "Organization", "name": "Cambridge University Press", "url": "https://www.cambridge.org/" },
-          "isbn": "9781009540759",
-          "datePublished": "2024",
+          "datePublished": "2025",
+          "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.1017/9781009540780", "url": "https://doi.org/10.1017/9781009540780" },
           "inLanguage": "en",
           "url": "https://quantecon.github.io/book-dp1/",
           "sameAs": [
+            "https://doi.org/10.1017/9781009540780",
             "https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F",
             "https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/"
           ],
@@ -49,6 +50,8 @@
             { "@type": "Person", "name": "Thomas J. Sargent", "url": "https://www.tomsargent.com/" },
             { "@type": "Person", "name": "John Stachurski", "url": "https://johnstachurski.net/" }
           ],
+          "publisher": { "@type": "Organization", "name": "Cambridge University Press", "url": "https://www.cambridge.org/" },
+          "creativeWorkStatus": "Forthcoming (Cambridge University Press, 2027)",
           "inLanguage": "en",
           "url": "https://quantecon.github.io/book-dp2/",
           "description": "Volume II reworks the foundations of dynamic programming for general state spaces."
@@ -73,6 +76,7 @@
                 <a href="#about">About</a>
                 <a href="#read">Read &amp; download</a>
                 <a href="#contents">Contents</a>
+                <a href="#cite">Cite</a>
                 <a href="https://github.com/QuantEcon/book-dp-public/">GitHub</a>
             </nav>
             <a class="mast__logo" href="https://quantecon.org" aria-label="QuantEcon">
@@ -150,6 +154,8 @@
                         <a href="https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F" target="_blank" rel="noopener">Cambridge</a>
                         &middot;
                         <a href="https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/" target="_blank" rel="noopener">Amazon</a>
+                        &middot;
+                        <a href="#cite-vol1">How to cite</a>
                     </p>
                 </article>
 
@@ -186,6 +192,12 @@
                             PDF
                         </a>
                     </div>
+
+                    <p class="card__print">
+                        Forthcoming from Cambridge University Press, 2027
+                        &middot;
+                        <a href="#cite-vol2">How to cite</a>
+                    </p>
                 </article>
             </div>
         </section>
@@ -249,6 +261,60 @@
                 </div>
             </div>
         </section>
+
+        <hr class="rule">
+
+        <section class="section" id="cite">
+            <h2>How to cite</h2>
+            <p class="section__sub">Please cite the Cambridge University Press editions, including when working from the free PDFs or online editions.</p>
+
+            <div class="cite">
+                <div class="cite__entry" id="cite-vol1">
+                    <h3>Volume I &mdash; Finite States</h3>
+                    <p class="cite__text">
+                        Sargent, Thomas J. and John Stachurski (2025).
+                        <cite>Dynamic Programming: Finite States</cite>.
+                        Cambridge University Press.
+                        <a href="https://doi.org/10.1017/9781009540780">https://doi.org/10.1017/9781009540780</a>
+                    </p>
+<pre class="cite__bib" id="bib-vol1">@book{sargent_stachurski_2025,
+  author    = {Sargent, Thomas J. and Stachurski, John},
+  title     = {Dynamic Programming: Finite States},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2025},
+  doi       = {10.1017/9781009540780}
+}</pre>
+                    <div class="cite__actions">
+                        <button class="btn btn--ghost" type="button" data-copy="bib-vol1">Copy BibTeX</button>
+                        <a class="btn btn--ghost" href="cite/dp1.bib" download>Download .bib</a>
+                    </div>
+                </div>
+
+                <div class="cite__entry" id="cite-vol2">
+                    <h3>Volume II &mdash; General States</h3>
+                    <p class="cite__text">
+                        Sargent, Thomas J. and John Stachurski (forthcoming, 2027).
+                        <cite>Dynamic Programming: General States</cite>.
+                        Cambridge University Press.
+                    </p>
+<pre class="cite__bib" id="bib-vol2">@book{sargent_stachurski_2027,
+  author    = {Sargent, Thomas J. and Stachurski, John},
+  title     = {Dynamic Programming: General States},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2027},
+  note      = {Forthcoming},
+  url       = {https://dp.quantecon.org/}
+}</pre>
+                    <div class="cite__actions">
+                        <button class="btn btn--ghost" type="button" data-copy="bib-vol2">Copy BibTeX</button>
+                        <a class="btn btn--ghost" href="cite/dp2.bib" download>Download .bib</a>
+                    </div>
+                </div>
+            </div>
+            <p class="cite__all">Both entries: <a href="cite/dp.bib" download>dp.bib</a></p>
+        </section>
     </main>
 
     <footer class="foot">
@@ -262,5 +328,17 @@
         </div>
     </footer>
 </div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        var text = document.getElementById(btn.dataset.copy).textContent;
+        var label = btn.textContent;
+        navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = 'Copied';
+            setTimeout(function () { btn.textContent = label; }, 1500);
+        });
+    });
+});
+</script>
 </body>
 </html>

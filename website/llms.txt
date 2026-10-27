@@ -5,7 +5,7 @@
 ## Online editions (canonical)
 
 - [Volume I: Finite States](https://quantecon.github.io/book-dp1/): MyST online edition — searchable, linkable, with companion code.
-- [Volume II: General States](https://quantecon.github.io/book-dp2/): MyST online edition (forthcoming print edition).
+- [Volume II: General States](https://quantecon.github.io/book-dp2/): MyST online edition (print edition forthcoming from Cambridge University Press, 2027).
 
 ## PDFs
 
@@ -20,8 +20,38 @@
 
 ## In print
 
-- Volume I: published by Cambridge University Press, 2024 (ISBN 9781009540759). Available from [Cambridge](https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F) and [Amazon](https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/).
-- Volume II: forthcoming.
+- Volume I: *Dynamic Programming: Finite States*, Cambridge University Press, 2025, DOI [10.1017/9781009540780](https://doi.org/10.1017/9781009540780). Available from [Cambridge](https://www.cambridge.org/core/books/dynamic-programming/144418B20058C60C6CCDB2AD0C6B4D0F) and [Amazon](https://www.amazon.com/Dynamic-Programming-Finite-Thomas-Sargent/dp/1009540750/).
+- Volume II: *Dynamic Programming: General States*, accepted by Cambridge University Press, forthcoming 2027.
+
+## How to cite
+
+Please cite the Cambridge University Press editions, including when working from the free PDFs or online editions.
+
+- Volume I: Sargent, Thomas J. and John Stachurski (2025). *Dynamic Programming: Finite States*. Cambridge University Press. https://doi.org/10.1017/9781009540780
+- Volume II: Sargent, Thomas J. and John Stachurski (forthcoming, 2027). *Dynamic Programming: General States*. Cambridge University Press.
+
+BibTeX ([dp.bib](https://dp.quantecon.org/cite/dp.bib)):
+
+```bibtex
+@book{sargent_stachurski_2025,
+  author    = {Sargent, Thomas J. and Stachurski, John},
+  title     = {Dynamic Programming: Finite States},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2025},
+  doi       = {10.1017/9781009540780}
+}
+
+@book{sargent_stachurski_2027,
+  author    = {Sargent, Thomas J. and Stachurski, John},
+  title     = {Dynamic Programming: General States},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2027},
+  note      = {Forthcoming},
+  url       = {https://dp.quantecon.org/}
+}
+```
 
 ## Source
 
