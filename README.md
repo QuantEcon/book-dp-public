@@ -34,3 +34,30 @@ from the free PDFs:
 
 BibTeX entries are in [`website/cite/dp.bib`](website/cite/dp.bib) and at
 [dp.quantecon.org/#cite](https://dp.quantecon.org/#cite).
+
+### Keeping the citation in step
+
+The citation appears in several places across three repositories. When it
+changes — Volume II's DOI and final year, for instance — update all of them.
+
+In this repository:
+
+- `website/index.html`: the "How to cite" section, the `citation_*` meta
+  tags and the JSON-LD
+- `website/cite/dp1.bib`, `dp2.bib` and `dp.bib`
+- `website/llms.txt`: the "How to cite" section
+- `CITATION.cff`
+- this README
+
+In each volume's MyST edition (`mystmd/` on the `mystmd-conversion` branch
+of book-dp1 and book-dp2):
+
+- `index.md` and `licensing.md`: the "How to cite" sections
+- `myst.yml`: the footer, and `doi:` (Volume I has it; add it for
+  Volume II once Cambridge mints one)
+- `scripts/build_llms_txt.py`: `HOW_TO_CITE`, which must match the section
+  in `website/llms.txt` word for word
+
+On the MyST pages, write a DOI as `doi:10.1017/…` text, not as a doi.org
+link: mystmd turns any doi.org link into an automatically generated
+reference fetched at build time.
