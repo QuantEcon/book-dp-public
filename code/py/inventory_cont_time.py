@@ -27,7 +27,7 @@ def sim_path(T=10, seed=123, λ=0.5, α=0.7, b=10):
 
     def X(t):
         k = np.searchsorted(J_vals, t, side='right') - 1
-        return Y_vals[k+1]
+        return Y_vals[k]
 
     return X
 

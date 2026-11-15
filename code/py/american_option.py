@@ -30,7 +30,7 @@ def create_american_option_model(
         r=0.01,          # interest rate
         K=10.0, T=200):  # strike price and expiration date
     """
-    Creates an instance of the option model with log S_t = Z_t + W_t.
+    Creates an instance of the option model with S_t = Z_t + W_t.
     """
     t_vals = np.arange(T+1)
     mc = tauchen(n, ρ, ν)

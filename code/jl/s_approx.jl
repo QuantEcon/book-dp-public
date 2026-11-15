@@ -26,7 +26,7 @@ function successive_approx(T,                  # operator (callable)
     end
 
     if error <= tolerance
-        println("Terminated successfully in $k iterations.")
+        println("Terminated successfully in $(k - 1) iterations.")
     else
         println("Warning: hit iteration bound.")
     end

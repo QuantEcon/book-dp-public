@@ -9,7 +9,7 @@ function create_savings_model(; R=1.01, β=0.98, γ=2.5,
     return (; β, R, γ, w_grid, y_grid, Q)
 end
 
-"B(w, y, w′, v) = u(R*w + y - w′) + β Σ_y′ v(w′, y′) Q(y, y′)."
+"B(w, y, w′, v) = u(w + y - w′ / R) + β Σ_y′ v(w′, y′) Q(y, y′)."
 function B(i, j, k, v, model)
     (; β, R, γ, w_grid, y_grid, Q) = model
     w, y, w′ = w_grid[i], y_grid[j], w_grid[k]

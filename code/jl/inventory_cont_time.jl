@@ -31,7 +31,7 @@ function sim_path(; T=10, seed=123, λ=0.5, α=0.7, b=10)
     
     function X(t)
         k = searchsortedlast(J_vals, t)
-        return Y_vals[k+1]
+        return Y_vals[k]
     end
 
     return X

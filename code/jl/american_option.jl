@@ -6,7 +6,7 @@ Valuation for finite-horizon American call options in discrete time.
 include("s_approx.jl")
 using QuantEcon, LinearAlgebra, IterTools
 
-"Creates an instance of the option model with log S_t = Z_t + W_t."
+"Creates an instance of the option model with S_t = Z_t + W_t."
 function create_american_option_model(;
         n=100, μ=10.0,  # Markov state grid size and mean value
         ρ=0.98, ν=0.2,  # persistence and volatility for Markov state
